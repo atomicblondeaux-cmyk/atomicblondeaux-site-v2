@@ -178,3 +178,24 @@ h1{font-size:clamp(48px,5.35vw,78px);line-height:1.035;max-width:1020px}
  .button,.text-link{font-size:16px}
  .rule-note,.metrics span,.contact-foot,footer{font-size:13px}
 }
+
+/* V3.5 refinement: strengthen secondary hierarchy without increasing overall scale */
+.work-tag{
+  font-size:15px;
+  letter-spacing:.045em;
+  line-height:1.42;
+  font-weight:650;
+}
+.work-grid p,
+.about p,
+.section-intro p,
+.cards p,
+.qualification-list span{
+  color:#4f4b45;
+}
+.about p{
+  max-width:68ch;
+}
+@media(max-width:800px){
+  .work-tag{font-size:14px;letter-spacing:.035em}
+}
