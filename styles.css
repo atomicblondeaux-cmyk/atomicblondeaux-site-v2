@@ -13,3 +13,18 @@
 .identity-strip{padding-bottom:0}
 .hero{padding-top:56px}
 @media(max-width:800px){.identity-logo{width:min(440px,92vw);margin-bottom:4px}.hero{padding-top:48px}}
+
+/* V3.2 typographic hierarchy */
+.site-header nav a{font-size:14px}
+.eyebrow,.section-label,.work-tag{font-size:12px;letter-spacing:.12em}
+.hero-detail{display:block;color:var(--gold);font-family:"Libre Caslon Display",Georgia,serif;font-size:.78em;line-height:1.08;letter-spacing:-.025em}
+.hero-from{font-size:.72em}
+.lede{font-size:22px;line-height:1.58;max-width:800px}
+.button,.text-link{font-size:14px}
+@media(max-width:800px){
+.site-header nav a{font-size:15px}
+.eyebrow,.section-label,.work-tag{font-size:11px}
+.lede{font-size:19px}
+.button,.text-link{font-size:14px}
+.hero-detail{font-size:.8em}
+}
