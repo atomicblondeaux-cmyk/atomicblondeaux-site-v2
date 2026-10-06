@@ -210,3 +210,62 @@ h1{font-size:clamp(48px,5.35vw,78px);line-height:1.035;max-width:1020px}
 @media(max-width:800px){
   .cards article>span{font-size:13px}
 }
+
+
+/* V3.7 mobile polish — preserve established typography */
+@media(max-width:800px){
+  /* Let the actual identity mark read larger without adding banner height */
+  .identity-strip{
+    padding:10px 20px 0;
+    overflow:hidden;
+  }
+  .identity-logo{
+    width:min(310px,84vw);
+    margin:0 auto;
+    display:block;
+  }
+
+  /* Tighten brand-to-message rhythm */
+  .hero{
+    padding-top:30px;
+  }
+
+  /* Mobile navigation should feel like part of the designed page */
+  .menu{
+    display:block;
+    color:var(--navy);
+    font-size:16px;
+    font-weight:500;
+    padding:10px 0 10px 14px;
+    cursor:pointer;
+  }
+  .menu:hover,.menu:focus-visible{color:var(--gold)}
+  .site-header nav{
+    top:68px;
+    padding:8px 20px 14px;
+    gap:0;
+    box-shadow:0 10px 24px rgba(13,42,79,.06);
+  }
+  .site-header nav a{
+    padding:14px 0;
+    border-top:1px solid var(--line);
+    color:var(--navy);
+  }
+  .site-header nav a:first-child{border-top:0}
+  .site-header nav a:hover,.site-header nav a:focus-visible{
+    color:var(--gold);
+  }
+
+  /* Preserve type sizes; refine vertical rhythm only */
+  .beyond{
+    padding-top:66px;
+    padding-bottom:62px;
+  }
+  .beyond .section-intro{
+    margin-top:34px;
+  }
+  .qualification-list div{
+    padding-top:21px;
+    padding-bottom:21px;
+  }
+}
