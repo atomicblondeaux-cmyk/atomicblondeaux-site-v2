@@ -7,3 +7,9 @@
 .identity-strip{padding-top:18px;padding-bottom:6px}
 .identity-logo{width:min(430px,44vw);margin:0 auto 10px}
 @media(max-width:800px){.identity-strip{padding-top:14px}.identity-logo{width:min(360px,82vw);margin-bottom:8px}}
+
+/* V3.1 identity / hero proportion */
+.identity-logo{width:min(575px,58vw);margin-bottom:4px}
+.identity-strip{padding-bottom:0}
+.hero{padding-top:56px}
+@media(max-width:800px){.identity-logo{width:min(440px,92vw);margin-bottom:4px}.hero{padding-top:48px}}
