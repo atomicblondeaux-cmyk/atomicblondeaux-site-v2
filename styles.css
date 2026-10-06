@@ -93,3 +93,49 @@ h1{font-size:clamp(52px,6.15vw,88px);line-height:1.02;max-width:1050px;margin:18
   .actions{margin-top:24px}
   .rule-note{margin-top:44px}
 }
+
+
+/* V3.5 mobile visual-balance correction */
+@media(max-width:800px){
+  /* Header: keep the navigation identity readable without competing with the hero */
+  .brand{font-size:13px;letter-spacing:.075em;gap:10px}
+  .atom{width:32px;height:32px;font-size:11px}
+
+  /* Secondary brand mark: present, but no longer a second hero */
+  .identity-strip{padding:14px 20px 0}
+  .identity-logo{width:min(292px,78vw);margin:0 auto}
+
+  /* Hero: editorial rather than poster-scale */
+  .hero{min-height:0;padding:38px 20px 48px}
+  .hero .eyebrow{
+    font-size:11px;
+    line-height:1.4;
+    letter-spacing:.095em;
+    margin-bottom:0;
+  }
+  h1{
+    font-size:clamp(36px,9.3vw,44px);
+    line-height:1.065;
+    letter-spacing:-.026em;
+    max-width:100%;
+    margin:16px 0 24px;
+  }
+  .hero-detail{
+    display:block;
+    font-size:.64em;
+    line-height:1.16;
+    letter-spacing:-.01em;
+    margin-top:5px;
+  }
+  .hero-from{font-size:.9em}
+
+  /* Reading copy stays comfortably large */
+  .lede{
+    font-size:17px;
+    line-height:1.62;
+    max-width:35em;
+    margin-bottom:0;
+  }
+  .actions{margin-top:24px}
+  .rule-note{margin-top:40px}
+}
