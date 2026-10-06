@@ -339,3 +339,23 @@ h1{font-size:clamp(48px,5.35vw,78px);line-height:1.035;max-width:1020px}
   object-fit:contain;
   transform:none;
 }
+
+
+/* V3.12 contact LinkedIn */
+.contact .linkedin-link{
+  text-decoration:none;
+  white-space:nowrap;
+}
+.contact .linkedin-link span{
+  display:inline-block;
+  margin-left:3px;
+  transition:transform .18s ease;
+}
+.contact .linkedin-link:hover,
+.contact .linkedin-link:focus-visible{
+  color:var(--gold);
+}
+.contact .linkedin-link:hover span,
+.contact .linkedin-link:focus-visible span{
+  transform:translate(2px,-2px);
+}
