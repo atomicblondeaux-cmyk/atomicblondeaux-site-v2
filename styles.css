@@ -199,3 +199,14 @@ h1{font-size:clamp(48px,5.35vw,78px);line-height:1.035;max-width:1020px}
 @media(max-width:800px){
   .work-tag{font-size:14px;letter-spacing:.035em}
 }
+
+/* V3.6 service-card numbering refinement */
+.cards article>span{
+  font-size:14px;
+  line-height:1.4;
+  letter-spacing:.075em;
+  font-weight:600;
+}
+@media(max-width:800px){
+  .cards article>span{font-size:13px}
+}
