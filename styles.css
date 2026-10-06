@@ -2,3 +2,8 @@
 /* V3 real brand assets */
 .identity-logo{display:block;width:min(760px,72vw);height:auto;margin:0 auto 18px}
 @media(max-width:800px){.identity-logo{width:100%;margin-bottom:14px}}
+
+/* V3 logo hierarchy correction */
+.identity-strip{padding-top:18px;padding-bottom:6px}
+.identity-logo{width:min(430px,44vw);margin:0 auto 10px}
+@media(max-width:800px){.identity-strip{padding-top:14px}.identity-logo{width:min(360px,82vw);margin-bottom:8px}}
