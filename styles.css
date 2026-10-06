@@ -359,3 +359,18 @@ h1{font-size:clamp(48px,5.35vw,78px);line-height:1.035;max-width:1020px}
 .contact .linkedin-link:focus-visible span{
   transform:translate(2px,-2px);
 }
+
+
+/* V4 three-lane practice architecture — preserve established typography */
+.cards.three{grid-template-columns:repeat(3,1fr)}
+.cards.three article{min-height:310px;padding:30px 34px 32px 0}
+.cards.three article+article{border-left:1px solid var(--line);padding-left:34px}
+.cards.three article:nth-child(n+3){border-top:0}
+.capability-detail{margin-top:58px}
+.capability-detail>.section-label{margin-bottom:18px}
+@media(max-width:800px){
+  .cards.three{grid-template-columns:1fr}
+  .cards.three article{min-height:0;padding:26px 0}
+  .cards.three article+article{border-left:0;border-top:1px solid var(--line);padding-left:0}
+  .capability-detail{margin-top:46px}
+}
