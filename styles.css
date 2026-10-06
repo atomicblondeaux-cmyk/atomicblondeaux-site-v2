@@ -306,3 +306,25 @@ h1{font-size:clamp(48px,5.35vw,78px);line-height:1.035;max-width:1020px}
   display:block;
   transform:scale(1.55);
 }
+
+
+/* V3.10 contain header monogram — prevent artwork escaping into hero */
+.site-header .brand .atom{
+  flex:0 0 32px;
+  width:32px;
+  height:32px;
+  display:block;
+  overflow:hidden;
+  position:relative;
+}
+.site-header .brand .atom img{
+  position:absolute;
+  inset:0;
+  width:32px;
+  height:32px;
+  max-width:32px;
+  max-height:32px;
+  object-fit:contain;
+  transform:none;
+  margin:0;
+}
